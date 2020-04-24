@@ -1,0 +1,97 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(209, 33%, 12%);
+}
+
+header {
+    padding: 50px;
+}
+
+#container {
+    margin: 0 15%;
+}
+
+h1{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+h1 span{
+    font-weight: 600;
+    color: hsl(209, 33%, 12%);
+}
+
+p{
+    padding: 20px;
+}
+
+#email{
+    border-style: none;
+    border: hsl(223, 100%, 88%) solid 1px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 60%;
+}
+
+.inval{
+    border: hsl(354, 100%, 66%) solid 1px;
+}
+
+#invalidEmail{
+    text-align: left;
+    color: hsl(354, 100%, 66%);
+    font-size: 0.75rem;
+    padding-left: 5%;
+}
+
+input:focus {outline: none;}
+
+#notify {
+    border-style: none;
+    padding: 12px 40px;
+    border-radius: 50px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 2px 5px hsl(223, 87%, 63%);
+    cursor: pointer;
+}
+
+#notify:hover{
+    background-color: hsl(223, 87%, 69%);
+}
+
+.imgcontainer img {
+    width: 90%;
+}
+
+.imgcontainer{
+    padding: 50px 0;
+}
+
+.socials{
+    padding: 20px;
+}
+
+.fab {
+    border: hsl(223, 100%, 88%) solid 0.5px;
+    border-radius: 50%;
+    padding: 7.5px;
+    color: hsl(223, 87%, 63%);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fab:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
