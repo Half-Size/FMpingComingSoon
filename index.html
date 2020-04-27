@@ -21,12 +21,11 @@
 
   <p>Subscribe and get notified</p>
 
-  <form name="notifyForm" onsubmit="return(validate());">
-  <input type="email" id="email" name="email" placeholder="Your email address..." required> 
+  <form name="notifyForm" onsubmit="return(validate());" class="notifyForm">
+  <input type="email" id="email" class="email" name="email" placeholder="Your email address..." required> 
+  <div id ="invalidEmail"></div>
   <input type="submit" id="notify" value="Notify Me"></input>
   </form>
-
-  <div id ="invalidEmail"></div>
 
   <div class="imgcontainer"><img src="./images/illustration-dashboard.png"></div>
 

@@ -17,7 +17,7 @@ header {
 }
 
 #container {
-    margin: 0 15%;
+    margin: 0 22%;
 }
 
 h1{
@@ -34,12 +34,19 @@ p{
     padding: 20px;
 }
 
-#email{
-    border-style: none;
+.email{
     border: hsl(223, 100%, 88%) solid 1px;
     border-radius: 50px;
     padding: 10px;
-    width: 60%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.notifyForm {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px;
 }
 
 .inval{
@@ -50,20 +57,22 @@ p{
     text-align: left;
     color: hsl(354, 100%, 66%);
     font-size: 0.75rem;
-    padding-left: 5%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 input:focus {outline: none;}
 
 #notify {
     border-style: none;
-    padding: 12px 40px;
     border-radius: 50px;
     background-color: hsl(223, 87%, 63%);
     color: white;
     font-weight: 600;
     box-shadow: 0 2px 5px hsl(223, 87%, 63%);
     cursor: pointer;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 #notify:hover{
@@ -94,4 +103,31 @@ input:focus {outline: none;}
 .fab:hover {
     background-color: hsl(223, 87%, 63%);
     color: white;
+}
+
+@media (max-width: 375px) {
+    .notifyForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 10px;
+    }
+
+    #notify {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #invalidEmail{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #container {
+        margin: 0 10%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
